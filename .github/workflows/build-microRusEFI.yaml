@@ -65,4 +65,4 @@ jobs:
             ./firmware/deliver/rusefi*.bin
             ./firmware/deliver/rusefi*.hex
             ./firmware/deliver/rusefi*.dfu
-
+            tunerstudio/generated/rusefi_mre_f4.ini
