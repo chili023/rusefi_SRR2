@@ -180,7 +180,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->sdCardCsPin = Gpio::E15;
 
 	// Don't enable expansion header SPI by default
-	engineConfiguration->is_enabled_spi_3 = false;
+	engineConfiguration->is_enabled_spi_3 = true;
 
 	engineConfiguration->cylindersCount = 4;
 	engineConfiguration->firingOrder = FO_1_3_4_2;
