@@ -62,4 +62,4 @@ jobs:
         with:
           name: mre-legacy_f4-firmware
           path: |
-            ./firmware/deliver/
+            ./rusefi.snapshot.mre_f4/
