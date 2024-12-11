@@ -137,6 +137,7 @@ void setBoardConfigOverrides() {
 
 	// SPI3 for expansion header
 	// Don't override enable since you might want these pins for something else
+  engineConfiguration->is_enabled_spi_3 = true;
 	engineConfiguration->spi3mosiPin = Gpio::C12;
 	engineConfiguration->spi3misoPin = Gpio::C11;
 	engineConfiguration->spi3sckPin = Gpio::C10;
