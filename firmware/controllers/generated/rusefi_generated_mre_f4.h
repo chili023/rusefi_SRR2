@@ -1754,12 +1754,12 @@
 #define ts_show_spi1_pins true
 #define ts_show_spi2_enable false
 #define ts_show_spi2_pins false
-#define ts_show_spi3_pins false
-#define ts_show_spi4_enable true
+#define ts_show_spi3_pins true
+#define ts_show_spi3_enable true
 #define ts_show_spi4_pins false
-#define ts_show_spi5_enable true
+#define ts_show_spi5_enable false
 #define ts_show_spi5_pins false
-#define ts_show_spi6_enable true
+#define ts_show_spi6_enable false
 #define ts_show_spi6_pins false
 #define ts_show_staged_injection true
 #define ts_show_start_button true
