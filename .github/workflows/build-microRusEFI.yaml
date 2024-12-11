@@ -69,3 +69,4 @@ jobs:
             ./firmware/deliver/rusefi_mre_f4*.ini
             ./firmware/tunerstudio/generated/rusefi_mre_f4*.ini
             ./firmware/rusefi.snapshot.mre_f4/rusefi_mre_f4*.ini
+            ./firmware/rusefi.snapshot.mre_f4/
