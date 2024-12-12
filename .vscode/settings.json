@@ -35,4 +35,5 @@
 		"*.input": "ini"
 	},
 	"C_Cpp.formatting": "vcFormat",
+	"cmake.sourceDirectory": "C:/Users/andre/Documents/GitHub/rusefi_SRR2/misc/libopenblt_jni",
 }
