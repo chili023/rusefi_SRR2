@@ -1,6 +1,13 @@
 name: Build microRusEFI Firmware
+
 on:
- workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
 
 jobs:
   build-microrusefi:
@@ -20,7 +27,6 @@ jobs:
       - name: Set Build Environment Variables
         run: |
           echo "BOARD_META_PATH=config/boards/microrusefi/meta-info-mre_f4.env" >> $GITHUB_ENV
-
       - name: Install Arm GNU Toolchain (arm-none-eabi-gcc)
         uses: carlosperate/arm-none-eabi-gcc-action@v1
         with:
@@ -58,7 +64,7 @@ jobs:
             ./firmware/deliver/rusefi*.hex
             ./firmware/deliver/rusefi*.dfu
             ./firmware/deliver/rusefi*.ini
-        #    ./firmware/deliver/rusefi_mre_f4*.ini
+            ./firmware/deliver/rusefi_mre_f4*.ini
             ./firmware/tunerstudio/generated/rusefi_mre_f4*.ini
-        #    ./firmware/rusefi.snapshot.mre_f4/rusefi_mre_f4*.ini
-   #         ./firmware/rusefi.snapshot.mre_f4/
+            ./firmware/rusefi.snapshot.mre_f4/rusefi_mre_f4*.ini
+            ./firmware/rusefi.snapshot.mre_f4/
