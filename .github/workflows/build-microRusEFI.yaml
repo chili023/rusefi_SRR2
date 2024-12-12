@@ -1,5 +1,5 @@
 name: Build microRusEFI Firmware
-
+on:
  workflow_dispatch:
 
 jobs:
