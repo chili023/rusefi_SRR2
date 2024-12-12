@@ -1,0 +1,305 @@
+meta: config/boards/hellen_meta.h
+
+pins:
+  - pin: 1A
+    function: HPFP Positive
+    meta: H144_LS_6
+    color: green
+    class: outputs
+
+  - pin: 2A
+    function: GDI Injector 4 Positive
+    color: brown
+
+  - pin: 3A
+    function: GDI Injector 4 Negative
+    ts_name: ___ GDI Injector 4
+    class: outputs
+    meta: H144_LS_4
+    color: brown
+    type: ls
+
+  - pin: 4A
+    function: GDI Injector 3 Positive
+    color: blue
+
+  - pin: 5A
+    function: GDI Injector 3 Negative
+    ts_name: ___ GDI Injector 3
+    class: outputs
+    meta: H144_LS_3
+    color: blue
+    type: ls
+
+  - pin: 6A
+    function: GDI Injector 2 Positive
+    color: white
+
+  - pin: 7A
+    function: GDI Injector 2 Negative
+    class: outputs
+    ts_name: ___ GDI Injector 2
+    meta: H144_LS_2
+    color: white
+    type: ls
+
+  - pin: 8A
+    function: GDI Injector 1 Positive
+    color: green
+
+  - pin: 9A
+    function: GDI Injector 1 Negative
+    class: outputs
+    ts_name: ___ GDI Injector 1
+    meta: H144_LS_1
+    type: ls
+    color: green
+
+  - pin: 10A
+    function: HPFP Negative
+    color:
+
+  - pin: 11A
+    meta: H144_IGN_4
+    class: outputs
+    function: Smart Ignition Coil 4
+    type: ign
+    ts_name: ___ Ignition 4
+    color: orange/brown
+
+  - pin: 12A
+    meta: H144_IGN_3
+    class: outputs
+    function: Smart Ignition Coil 3
+    type: ign
+    ts_name: ___ Ignition 3
+    color: blue
+
+  - pin: 13A
+    meta: H144_IGN_2
+    class: outputs
+    function: Smart Ignition Coil 2
+    type: ign
+    ts_name: ___ Ignition 2
+    color: white
+
+  - pin: 14A
+    meta: H144_IGN_1
+    class: outputs
+    function: Smart Ignition Coil 1
+    type: ign
+    ts_name: ___ Ignition 1
+    color: green
+
+  - pin: 15A
+    function: CAN bus high (CANH)
+    type: can
+    color: green
+
+  - pin: 16A
+    function: CAN1 bus low (CANL)
+    type: can
+    color: blue
+
+  - pin: 17A
+    function: ETB negative
+    type: etb
+    color: white
+
+  - pin: 18A
+    function: +12V from main relay
+    type: 12v
+    color: red
+
+  - pin: 19A
+    function: TPS 1 signal
+    ts_name: ___ TPS1
+    meta: H144_IN_TPS
+    color: green
+    type: av
+    class: analog_inputs
+
+  - pin: 20A
+    function: TPS 2 signal
+    ts_name: ___ TPS2
+    meta: H144_IN_TPS2
+    color: blue
+    type: av
+    class: analog_inputs
+
+
+  - pin: 21A
+    function: ECT CLT Coolant
+    color: grey
+    type: at
+    meta: H144_IN_CLT
+    class: analog_inputs
+
+
+  - pin: 22A
+    function: IAT
+    color: blue
+    type: at
+    meta: H144_IN_IAT
+    class: analog_inputs
+
+  - pin: 23A
+    function: MAP Signal
+    type: av
+    color: yellow
+    meta: H144_IN_MAP1
+    class: analog_inputs
+
+  - pin: 24A
+    function: Sensor +5v Power Feed
+    type: 5v
+    color: orange
+
+  - pin: 25A
+    function: ETB positive
+    type: etb
+    color: blue
+
+
+  - pin: 26A
+    function: Power GND
+    type: gnd
+    color: black
+
+  - pin: 27A
+    function: Sensor GND
+    type: agnd
+    color: black
+
+  - pin: 28A
+    function: 28A input
+    ts_name: ___ input
+    id: [H144_IN_O2S2_DIGITAL, H144_IN_O2S2]
+    class: [switch_inputs, analog_inputs]
+    type: av
+
+  - pin: 33A
+    function: Wastegate Low Side
+    ts_name: ___ Wastegate Solenoid
+    class: outputs
+    id: TLE9104_3_OUT_0
+    type: ls
+
+  - pin: 34A
+    function: AC Low Side
+    ts_name: ___ AC Control
+    class: outputs
+    id: TLE9104_3_OUT_1
+    type: ls
+
+info:
+  title: AlphaX 4K-GDI
+  name: AlphaX 4K-GDI
+  directory: hellen/alphax-4K-GDI
+  order: 0
+  board_url: https://rusefi.com/s/4K-GDI
+  image:
+    file: 34pins-4k-A.jpg
+  pins:
+    - pin: 1A
+      x: 75
+      y: 90
+    - pin: 2A
+      x: 95
+      y: 90
+    - pin: 3A
+      x: 120
+      y: 90
+    - pin: 4A
+      x: 145
+      y: 90
+    - pin: 5A
+      x: 165
+      y: 90
+    - pin: 6A
+      x: 190
+      y: 90
+    - pin: 7A
+      x: 215
+      y: 90
+    - pin: 8A
+      x: 240
+      y: 90
+    - pin: 9A
+      x: 265
+      y: 90
+    - pin: 10A
+      x: 85
+      y: 120
+    - pin: 11A
+      x: 105
+      y: 120
+    - pin: 12A
+      x: 130
+      y: 120
+    - pin: 13A
+      x: 155
+      y: 120
+    - pin: 14A
+      x: 180
+      y: 120
+    - pin: 15A
+      x: 205
+      y: 120
+    - pin: 16A
+      x: 225
+      y: 120
+    - pin: 17A
+      x: 245
+      y: 120
+    - pin: 18A
+      x: 85
+      y: 150
+    - pin: 19A
+      x: 110
+      y: 150
+    - pin: 20A
+      x: 130
+      y: 150
+    - pin: 21A
+      x: 155
+      y: 150
+    - pin: 22A
+      x: 180
+      y: 150
+    - pin: 23A
+      x: 205
+      y: 150
+    - pin: 24A
+      x: 225
+      y: 150
+    - pin: 25A
+      x: 245
+      y: 150
+    - pin: 26A
+      x: 74
+      y: 180
+    - pin: 27A
+      x: 98
+      y: 180
+    - pin: 28A
+      x: 122
+      y: 180
+    - pin: 29A
+      x: 146
+      y: 180
+    - pin: 30A
+      x: 170
+      y: 180
+    - pin: 31A
+      x: 195
+      y: 180
+    - pin: 32A
+      x: 220
+      y: 180
+    - pin: 33A
+      x: 245
+      y: 180
+    - pin: 34A
+      x: 265
+      y: 180
