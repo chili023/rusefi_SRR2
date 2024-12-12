@@ -41,10 +41,10 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      - name: Clean Previous Builds
-        working-directory: ./firmware
-        run: |
-          make clean
+   #   - name: Clean Previous Builds
+   #     working-directory: ./firmware
+   #     run: |
+   #       make clean
 
       - name: Build Firmware for mre-legacy_f4
         working-directory: ./firmware
