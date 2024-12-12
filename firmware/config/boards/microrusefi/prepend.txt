@@ -34,7 +34,8 @@
 
 #define ts_show_spi2_enable false
 #define ts_show_spi2_pins false
-#define ts_show_spi3_pins false
+#define ts_show_spi3_enable true
+#define ts_show_spi3_pins true
 
 
 #define LUA_SCRIPT_SIZE 10000
