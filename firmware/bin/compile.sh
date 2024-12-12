@@ -67,4 +67,5 @@ cd "$FDIR"
 MI=$(realpath --relative-to="$FDIR" "$MI")
 
 source config/boards/common_script_read_meta_env.inc "$MI"
+make -clean $MAKE_ARGS
 make $B -j$(nproc) -r $MAKE_ARGS
