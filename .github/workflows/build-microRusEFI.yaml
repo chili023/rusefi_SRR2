@@ -1,7 +1,12 @@
 name: Build microRusEFI Firmware
 
 on:
-
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
@@ -41,10 +46,10 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-   #   - name: Clean Previous Builds
-   #     working-directory: ./firmware
+ #     - name: Clean Previous Builds
+  #      working-directory: ./firmware
    #     run: |
-   #       make clean
+    #      make clean
 
       - name: Build Firmware for mre-legacy_f4
         working-directory: ./firmware
